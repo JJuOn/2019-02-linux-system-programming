@@ -2,7 +2,7 @@
 #include <fcntl.h>
 #include <string.h>
 
-#define MAX_BUF 1024
+#define MAX_BUF 10
 
 int main(int argc, char** argv){
 	// File pointer for source text file
@@ -36,7 +36,7 @@ int main(int argc, char** argv){
 			// Move to next character
 			*buf++;
 		}
-		// Printing one line is done, print new line character
+		// If one line is over, print newline
 		printf("\n");
 	}
 	// Close text file
