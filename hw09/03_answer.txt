@@ -1,0 +1,2 @@
+condition variable: stateless하다. signal 하는 순간에 wait하고 있는 Thread만 wake가 된다.
+semaphore: stateful하다. post하는 순간에 모든 thread가 semaphore가 1 증가한 것을 알 수 있다.
